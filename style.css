@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Barriecito&family=Borel&family=Gluten&family=Lora:wght@600&family=Oswald:wght@500&family=Overpass:wght@500&family=Poppins:wght@400;600&family=Ubuntu:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+nav ul {
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    align-items: center;
+    color: white;
+    list-style: none;
+    height: 65px;
+    background-color: black;
+
+}
+
+nav ul li {
+    padding: 0 12px;
+
+}
+
+.gameContainer {
+    background-color: rgb(35, 88, 107);
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Overpass', sans-serif;
+
+
+}
+
+.container {
+    padding: 10px 10px;
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+
+}
+
+.box {
+    font-size: 8rem;
+    border: 2px solid rgb(25, 26, 21);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* align-items: center; */
+}
+
+.box:hover {
+    background-color: rgb(25, 67, 82);
+}
+
+.gameInfo {
+    padding: 0 34px;
+
+}
+
+.br {
+    border-right: 0;
+}
+
+.bl {
+    border-left: 0;
+}
+
+.bt {
+    border-top: 0;
+}
+
+.bb {
+    border-bottom: 0;
+}
+
+#rest {
+    background-color: rgb(25, 97, 204);
+    border: none;
+    height: 40px;
+    width: 50%;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+#rest:hover {
+    background-color: rgb(27, 93, 192);
+    transition: .1s;
+
+}
+
+@media only screen and (min-width:200px) and (max-width:1000px) {
+    .box {
+        font-size: 1rem;
+        border: 2px solid rgb(25, 26, 21);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .br {
+        border-right: 0;
+    }
+
+    .bl {
+        border-left: 0;
+    }
+
+    .bt {
+        border-top: 0;
+    }
+
+    .bb {
+        border-bottom: 0;
+    }
+
+    .gameContainer {
+        display: grid;
+        grid-column: auto;
+
+    }
+
+    .container {
+        justify-content: center;
+    }
+}
